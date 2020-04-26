@@ -5,7 +5,8 @@
 struct ray {
 	vec3 a, b;
 	
-	ray(const vec3 &a,const vec3 &b):a(a), b(b) {}
+	ray() {}
+	ray(const vec3 &a,const vec3 &b) : a(a), b(b) {}
 	
 	vec3 origin() const { return a; }
 	vec3 direction() const { return b; }
