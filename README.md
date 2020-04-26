@@ -15,6 +15,7 @@ CS403 Computer Graphics, Shanghai Jiao Tong University
 
 ## hitable.h
 定义了一个抽象类 `hitable` 以及虚函数 `hitable::hit`，表示能与光线碰撞的物体及碰撞方法。
+
 定义了碰撞记录类 `hit_record`，记录碰撞位置的 t 取值、坐标以及法向量。
 
 ## sphere.h
@@ -31,5 +32,7 @@ CS403 Computer Graphics, Shanghai Jiao Tong University
 
 ## material.h
 定义了一个抽象类 `material` 以及虚函数 `material::scatter` ，分别表示物体材质及散射方法。
+
 定义了三个 `material` 派生的材质类 `lambertian`, `metal`, `dielectric`，实现了它们的散射方法。
+
 实现了折射函数 `reflect` 和反射函数 `refract` 以及 Schlick 的 Fresnel 近似函数的简化版本 `Schlick`。
