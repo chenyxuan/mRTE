@@ -3,7 +3,7 @@
 
 CS403 Computer Graphics, Shanghai Jiao Tong University
 
-![Three balls III, 2020](threeballs.jpg)
+![](threeballs.jpg)
 
 ---
 
