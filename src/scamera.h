@@ -1,5 +1,5 @@
-#ifndef SCAMERAH
-#define SCAMERAH
+#ifndef SCAMERA_H
+#define SCAMERA_H
 
 #include "ray.h"
 

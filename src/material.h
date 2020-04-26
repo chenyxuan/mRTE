@@ -1,5 +1,5 @@
-#ifndef MATERIALH
-#define MATERIALH
+#ifndef MATERIAL_H
+#define MATERIAL_H
 
 #include "hitable.h"
 #include "sphere.h"

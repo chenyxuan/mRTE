@@ -1,5 +1,5 @@
-#ifndef CAMERAH
-#define CAMERAH
+#ifndef CAMERA_H
+#define CAMERA_H
 #include "ray.h"
 
 vec3 random_in_unit_disk() {

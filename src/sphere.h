@@ -1,5 +1,5 @@
-#ifndef SPHEREH
-#define SPHEREH
+#ifndef SPHERE_H
+#define SPHERE_H
 
 #include "hitable.h"
 #include "material.h"
@@ -15,6 +15,7 @@ class sphere : public hitable {
 		sphere(vec3 cen,float r,material *mat_ptr) : center(cen), radius(r), mat_ptr(mat_ptr) {}
 		
 		virtual bool hit(const ray &r,float tmin,float tmax,hit_record &rec) const;
+		virtual bool bounding_box(float t0,float t1,aabb &output_box) const;
 };
 
 bool sphere::hit(const ray &r,float tmin,float tmax,hit_record &rec) const {
@@ -40,6 +41,11 @@ bool sphere::hit(const ray &r,float tmin,float tmax,hit_record &rec) const {
 		}
 	}
 	return false;
+}
+
+bool sphere::bounding_box(float t0,float t1,aabb &output_box) const {
+	output_box = aabb(center - vec3(radius, radius, radius), center + vec3(radius, radius, radius));
+	return true;
 }
 
 vec3 random_in_unit_sphere() {
