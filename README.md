@@ -3,7 +3,7 @@
 
 CS403 Computer Graphics, Shanghai Jiao Tong University
 
-![](threeballs.jpg)
+![](https://public.noi.top/image/1587879163059.jpeg)
 
 ---
 
