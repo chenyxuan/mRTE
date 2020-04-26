@@ -37,3 +37,8 @@ CS403 Computer Graphics, Shanghai Jiao Tong University
 
 实现了折射函数 `reflect` 和反射函数 `refract` 以及 Schlick 的 Fresnel 近似函数的简化版本 `Schlick`。
 
+## aabb.h
+定义了一个轴向包围盒(Axis-Aligned Bounding Box)类 `aabb`，实现了合并两个 `aabb` 的函数 `surrounding_box`。
+
+## bvh.h
+定义了一个层次包围盒(Bounding Volume Hierarchy)结点类 `bvh_node`，它是 `hitable` 的派生类，实现了层次包围盒的构造(即结点类的构造方法)。
